@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
+
+
+.counters {
+    background-color:var(--eerie-black-4);
+    color: var(--gold-crayola);
+    padding: 40px 20px;
+    border-top: 3px solid var(--black-alpha-15);
+}
+
+.counters .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+}
+
+.counters i {
+    color: rgb(230, 49, 49);
+    margin-bottom: 5px;
+}
+
+.counters .counter {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+    .counters .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .counters .container > div:nth-of-type(1),
+    .counters .container > div:nth-of-type(2) {
+        border-bottom: 1px solid var(--gold-crayola);
+        padding-bottom: 20px;
+    }
+}

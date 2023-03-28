@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- meta tags-->
+  <title>MilliFood & Restaurant</title>
+  <meta name="title" content="Milli - Inanılmaz & Zəngin Təamlar">
+  <meta name="description" content="MilliFood For Azerbaijan">
+
+  <!--  favicon -->
+  <link rel="shortcut icon" href="./logonav.svg" type="image/svg+xml">
+
+
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- css link-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="stylesheet" href="./assets/css/counter.css">
+
+  <!-- preload images -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+  <!-- Notify toastr -->
+  <style>
+    .swal-modal {
+      background-color: hsl(38, 61%, 73%);
+      border: 4px solid #dedede;
+    }
+
+    .swal-title {
+      color: #000, 0.8;
+    }
+
+
+    .swal-text {
+      color: #000;
+    }
+
+    .swal-button {
+      background-color: black;
+      color: hsl(38, 61%, 73%);
+      transition: all ease .5s;
+      border: 1px solid hsl(38, 61%, 73%);
+    }
+
+    .swal-button:hover {
+      background-color: hsl(38, 61%, 73%) !important;
+      border: 2px solid black;
+      color: black;
+    }
+
+    .swal-icon--success:before,
+    .swal-icon--success::after,
+    .swal-icon--success__hide-corners {
+      display: none;
+    }
+
+    .swal-icon--success__line {
+      background-color: #000000;
+    }
+
+    .swal-icon--success {
+      border-color: #000000;
+    }
+  </style>
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">MilliFOOD</p>
+  </div>
+
+
+
+
+
+
+
+  <!--  #HEADER -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="260" height="50" alt="MilliFood">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="./index.html" class="logo">
+          <img src="./assets/images/logo.png" width="160" height="50" alt="Grilli - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link hover-underline ">
+              <div class="separator"></div>
+
+              <span class="span">Əsas</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./menu.html" class="navbar-link hover-underline ">
+              <div class="separator"></div>
+
+              <span class="span">Menu</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./about.html" class="navbar-link hover-underline ">
+              <div class="separator"></div>
+
+              <span class="span">Haqqımızda</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Karyera Yüksəlişi</span>
+            </a>
+            <ul class="dropdown  navbar-link hover-underline ">
+              <li><a href="./errorpage.html">İşçi Heyyəti</a></li>
+              <li><a href="#comingg">Sponsorluq</a></li>
+              <li><a href="#notfound">Məhsul Dəstək</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./contact.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Əlaqə</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Bizi ziyarət et</p>
+
+          <address class="body-4">
+            Bəkir Çobanzadə küç. <br>
+            Bakı 1085
+          </address>
+
+          <p class="body-4 navbar-text">Hər gün : 8.00 - 23.00</p>
+
+          <a href="mailto:mehdi.ebilov0405@gmail.com" class="body-4 sidebar-link">mehdi.ebilov0405@gmail.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Rezerv sorğusu</p>
+
+          <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
+            +944 77 533 06 88
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="text text-1">Masa Axtar</span>
+
+        <span class="text text-2" aria-hidden="true">Masa Axtar</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Halal və Gigiyenik</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Qəlbə gedən yol <br>
+              mədədən keçir
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Ailəni və dostlarınıda götür gəl
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Digər Menulara Gözat</span>
+
+              <span class="text text-2" aria-hidden="true">Digər Menulara Gözat</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Sakitliyin həzzi yalnız MilliFOODA</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Mövsümlərin bütün təamı <br>
+              sizlər üçün
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Ailəni və dostlarınıda götür gəl
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Digər Menulara Gözat</span>
+
+              <span class="text text-2" aria-hidden="true">Digər Menulara Gözat</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Həm möhtəşəm həmdə çooox ləzzətli</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Ən böyük aşklar yeməklə <br>
+              başlar
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Ailəni və dostlarınıda götür gəl
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Digər Menulara Gözat</span>
+
+              <span class="text text-2" aria-hidden="true">Digər Menulara Gözat</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Bron edin</span>
+        </a>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+      <section class="reservation">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10" style="margin-top: 100px;">
+
+            <div class="form-left">
+
+              <h2 class="headline-1 text-center">Online Rezervasiya</h2>
+
+              <p class="form-text text-center">
+                Bron Tələbi üçün <a href="tel:+994775330688" class="link">+994 77 533 06 88</a>
+                və ya formu doldurun.
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" id="fullname" placeholder="Adınız" autocomplete="off"
+                  class="input-field">
+
+                <input type="mailto:" name="mail" id="email_id" placeholder="E-mailiniz" autocomplete="off"
+                  class="input-field">
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="1-person">1 Nəfər</option>
+                    <option value="2-person">2 Nəfər</option>
+                    <option value="3-person">3 Nəfər</option>
+                    <option value="4-person">4 Nəfər</option>
+                    <option value="5-person">5 Nəfər</option>
+                    <option value="6-person">6 Nəfər</option>
+                    <option value="7-person">7 Nəfər</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="08:00am">08 : 00 </option>
+                    <option value="09:00am">09 : 00 </option>
+                    <option value="010:00am">10 : 00 </option>
+                    <option value="011:00am">11 : 00 </option>
+                    <option value="012:00am">12 : 00 </option>
+                    <option value="01:00pm">13 : 00 </option>
+                    <option value="02:00pm">14 : 00 </option>
+                    <option value="03:00pm">15 : 00 </option>
+                    <option value="04:00pm">16 : 00 </option>
+                    <option value="05:00pm">17 : 00 </option>
+                    <option value="06:00pm">18 : 00 </option>
+                    <option value="07:00pm">19 : 00 </option>
+                    <option value="08:00pm">20 : 00 </option>
+                    <option value="09:00pm">21 : 00 </option>
+                    <option value="10:00pm">22 : 00 </option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+              <textarea name="message" placeholder="Mesajınız" id="mesaj" autocomplete="off"
+                class="input-field"></textarea>
+
+              <button onclick="SendMail()" type="submit" class="btn btn-secondary" id="bron">
+                <span class="text text-1">Masa Bron et</span>
+
+                <span class="text text-2" aria-hidden="true">Masa Bron et</span>
+              </button>
+
+            </div>
+
+
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+              <h2 class="headline-1 text-center">Əlaqə </h2>
+
+              <p class="contact-label">Rezerv Sorğusu</p>
+
+              <a href="tel:+994775330688" class="body-1 contact-number hover-underline">+994 77 533 06 88</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Məkan</p>
+
+              <address class="body-4">
+                Bəkir Çobanzadə küç. <br>
+                Bakı 1085
+              </address>
+
+              <p class="contact-label">Nahar</p>
+
+              <p class="body-4">
+                Hər gün <br>
+                10:00 - 14:30
+              </p>
+
+              <p class="contact-label">Bizness Lunch</p>
+
+              <p class="body-4">
+                Həftə içi <br>
+                13:00 - 15:00
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+       
+    
+
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Bizi seçnək üçün <br> 4 səbəb</p>
+
+          <h2 class="headline-1 section-title">Bizim gücümüz</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Gigiyenik qidalar</h3>
+
+                <p class="label-1 card-text">Hər məhsul bizdə bütün standartlara cavab verəcək 
+                  şəkildə saxlanılır və təmizlənir.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Təmiz auditoriya</h3>
+
+                <p class="label-1 card-text">Məkanımız gündəlik təmizlənir və dezinfeksya edilir.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Bacarıqlı Aşbazlar</h3>
+
+                <p class="label-1 card-text">Beynəlxalq dərəcəli aşbazlar sizə öz əl işləriylə və ləzzətli yeməkləriylə
+                  heyran edəcəkdir.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Tədbir & Canlı musiqi</h3>
+
+                <p class="label-1 card-text">Məkanda öz tədbirlərinizi keçirə bilərsiniz.
+                  Həftə içi  hərgün 20:00-dan etibarən canlı musiqi.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+ 
+
+
+
+
+      <!-- 
+    - #FOOTER
+  -->
+
+      <footer class="footer section has-bg-image text-center"
+        style="background-image: url('./assets/images/footer-bg.jpg')">
+        <div class="container">
+
+          <div class="footer-top grid-list">
+
+            <div class="footer-brand has-before has-after">
+
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.png" width="160" height="50" loading="lazy" alt="grilli home">
+              </a>
+
+              <address class="body-4">
+                Bəkir Çobanzadə küç. Bakı 1085
+              </address>
+
+              <a href="mehdi.ebilov0405@gmail.com" class="body-4 contact-link">millifood@chef.net</a>
+
+              <a href="tel:+994775330688" class="body-4 contact-link">Rezervasya üçün : +994 77 533 06 88</a>
+
+              <p class="body-4">
+                Hər gün : 08:00 - 23:00
+              </p>
+
+              <div class="wrapper">
+                <div class="separator"></div>
+                <div class="separator"></div>
+                <div class="separator"></div>
+              </div>
+
+              <p class="title-1">Yeniliklərlə bağlı</p>
+
+              <p class="label-1">
+                Üzv olarağ <span class="span">25% endirim qazanın.</span>
+              </p>
+
+              <form action="" class="input-wrapper">
+                <div class="icon-wrapper">
+                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="email" name="email_address" placeholder="Emailiniz" autocomplete="off"
+                    class="input-field">
+                </div>
+
+                <button type="submit" class="btn btn-secondary">
+                  <span class="text text-1">Üzv olun</span>
+
+                  <span class="text text-2" aria-hidden="true">Üzv olun</span>
+                </button>
+              </form>
+
+            </div>
+
+            <ul class="footer-list">
+
+              <li>
+                <a href="#" class="label-2 footer-link hover-underline">Əsas</a>
+              </li>
+
+              <li>
+                <a href="#" class="label-2 footer-link hover-underline">Menu</a>
+              </li>
+
+              <li>
+                <a href="#" class="label-2 footer-link hover-underline">Haqqımızda</a>
+              </li>
+
+              <li>
+                <a href="#" class="label-2 footer-link hover-underline">Karyera Yüksəlişi</a>
+              </li>
+
+              <li>
+                <a href="#" class="label-2 footer-link hover-underline">Əlaqə</a>
+              </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+
+
+              <li>
+                <a href="https://www.instagram.com/abilovm.m/" class="label-2 footer-link hover-underline">Instagram</a>
+              </li>
+
+              <li>
+                <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+              </li>
+
+              <li>
+                <a href="https://www.youtube.com/@ITBrains" class="label-2 footer-link hover-underline">Youtube</a>
+              </li>
+
+
+
+            </ul>
+
+          </div>
+
+          <div class="footer-bottom">
+
+            <p class="copyright">
+              &copy; 2022 MilliFOOD. All Rights Reserved | Crafted by <a href="https://www.instagram.com/abilovm.m/"
+                target="_blank" class="link">abilovmehdi</a>
+            </p>
+
+          </div>
+
+        </div>
+      </footer>
+
+
+
+
+
+      <!-- 
+    - #BACK TO TOP
+  -->
+
+      <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+      </a>
+
+
+
+
+
+      <!-- 
+    custom js link
+  -->
+      <script src="./assets/js/script.js"></script>
+      <script src="./assets/js/counter.js"></script>
+
+      <!--
+    aos js
+   -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <script>
+        AOS.init();
+      </script>
+
+
+      <!--
+  swiper cdn
+-->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+      <!-- 
+    ionicon link
+  -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+      <!----EMAIL JS
+
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
+        (function () {
+          emailjs.init("YotBpwhFAFvOqyOrs");
+        })();
+      </script>
+-->
+
+
+
+      <!-- SMTP JS EMAIL -->
+
+      <script src="https://smtpjs.com/v3/smtp.js">
+      </script>
+      <script>
+        function sendEmail() {
+          Email.send({
+            SecureToken: "1452531f-1901-4acd-9ed4-947aee404ab0",
+            To: `${document.querySelector("#email_id").value}`,
+            From: "millifood@chef.net",
+            Subject: `Təbriklər ${document.querySelector("input[name=name]").value}! Masanız artıq bron edildi!`,
+            Body: `<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+
+      body {
+        background-color: #f6f6f6;
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; 
+      }
+
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: sans-serif;
+          font-size: 14px;
+          vertical-align: top; 
+      }
+
+      .body {
+        background-color: #f6f6f6;
+        width: 100%; 
+      }
+
+      .container {
+        display: block;
+        margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 580px;
+        padding: 10px;
+        width: 580px; 
+      }
+
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        max-width: 580px;
+        padding: 10px; 
+      }
+
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #ffffff;
+        border-radius: 3px;
+        width: 100%; 
+      }
+
+      .wrapper {
+        box-sizing: border-box;
+        padding: 20px; 
+      }
+
+      .content-block {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+      .footer {
+        clear: both;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%; 
+      }
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #999999;
+          font-size: 12px;
+          text-align: center; 
+      }
+
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        margin-bottom: 30px; 
+      }
+
+      h1 {
+        font-size: 35px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize; 
+      }
+
+      p,
+      ul,
+      ol {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 15px; 
+      }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; 
+      }
+
+      a {
+        color: #3498db;
+        text-decoration: underline; 
+      }
+
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      .btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn > tbody > tr > td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: auto; 
+      }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; 
+      }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #3498db;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #3498db;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize; 
+      }
+
+      .btn-primary table td {
+        background-color: #3498db; 
+      }
+
+      .btn-primary a {
+        background-color: #3498db;
+        border-color: #3498db;
+        color: #ffffff; 
+      }
+
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; 
+      }
+
+      .first {
+        margin-top: 0; 
+      }
+
+      .align-center {
+        text-align: center; 
+      }
+
+      .align-right {
+        text-align: right; 
+      }
+
+      .align-left {
+        text-align: left; 
+      }
+
+      .clear {
+        clear: both; 
+      }
+
+      .mt0 {
+        margin-top: 0; 
+      }
+
+      .mb0 {
+        margin-bottom: 0; 
+      }
+
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; 
+      }
+
+      .powered-by a {
+        text-decoration: none; 
+      }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        margin: 20px 0; 
+      }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table.body h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; 
+        }
+        table.body p,
+        table.body ul,
+        table.body ol,
+        table.body td,
+        table.body span,
+        table.body a {
+          font-size: 16px !important; 
+        }
+        table.body .wrapper,
+        table.body .article {
+          padding: 10px !important; 
+        }
+        table.body .content {
+          padding: 0 !important; 
+        }
+        table.body .container {
+          padding: 0 !important;
+          width: 100% !important; 
+        }
+        table.body .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; 
+        }
+        table.body .btn table {
+          width: 100% !important; 
+        }
+        table.body .btn a {
+          width: 100% !important; 
+        }
+        table.body .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; 
+        }
+      }
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; 
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; 
+        }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; 
+        }
+        #MessageViewBody a {
+          color: inherit;
+          text-decoration: none;
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
+        .btn-primary table td:hover {
+          background-color: #34495e !important; 
+        }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; 
+        } 
+      }
+
+    </style>
+  </head>
+  <body>
+    <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table role="presentation" class="main">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <p>Salam ${document.querySelector("input[name=name]").value},</p>
+                        <p>Bizi seçdiyiniz üçün sizə minnətdarıq və ümid edirik ki, xidmətlərimizdən razı qalacaqsız!</p>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                          <tbody>
+                            <tr>
+                              <td align="left">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td> <a href="https://abilovm.github.io/millifood/" target="_blank">Sayta geri qayıt</a> </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p>Girişdə adınızı deməniz kifayətdir.</p>
+                        <p>Nuş Olsun! :)</p>
+                        <p>Ümid edirəm işimi bəyəndiniz! ITBRAINS ACADEMY AILƏSI :)</p>
+                      </td> 
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+            <!-- END CENTERED WHITE CONTAINER -->
+
+          </div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>`
+          }).then(
+            message => console.log(message)
+          );
+        }
+      </script>
+
+      <!--
+        ALERT MESS FROM SEND
+      -->
+
+      <script>
+        document.querySelector("#bron").addEventListener('click', () => {
+
+          if (document.querySelector("input[name=name]").value.length == 0 || document.querySelector("#email_id").value.length == 0 || document.querySelector("textarea[name=message]").value.length == 0) {
+            swal("Nəsə səhv oldu", "Bütün xanaları doldurun!", "error");
+          } else {
+            swal("Əlaaa!", " Masanızı uğurla bron etdiniz!", "success");
+            sendEmail()
+            document.querySelector("textarea[name=message]").value = "";
+            document.querySelector("input[name=name]").value = "";
+            document.querySelector("#email_id").value = "";
+          }
+
+        })
+
+      </script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
